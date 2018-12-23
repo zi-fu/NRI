@@ -1,0 +1,86 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:700');
+
+
+body { 
+    color: #333333; 
+}
+
+/* リンク */
+a {
+    color: #999966;
+}
+
+/* パンくずリスト */
+.topicPath {
+    font-size: 12px;
+}
+
+/* ページの先頭へ戻る */
+.pagetop {
+    font-size: 12px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+/* ページ */
+#page {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* ページヘッダー */
+#pageHead #siteTitle {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    font-family: 'Vollkorn', serif;
+}
+
+/* ページフッター */
+#pageFoot {
+    border-top: solid 1px #cccccc;
+    margin-top: 15px;
+    
+}
+
+/* ページボディ */
+#pageBody {
+    margin-top: 30px;
+}
+
+#pageBodyMain {
+    width: 720px;
+   
+}
+
+#pageBodySub {
+    width: 220px;
+    
+}
+
+/* --------サブカラム内の装飾--------- */
+/* 見出し */
+
+/* おしらせ */
+
+/* ローカルナビ */
+
+/* ------メインカラム内の装飾--------- */
+
+/* リスト */
+
+/* 表 */
+
+/* 図版 */
+
+/* 見出し */
+
+/* 区切り線・余白 */
+
+/* センター寄せ画像 */
+
+/* ----トップページの内容---- */
+/* メインビジュアル */
