@@ -8,15 +8,36 @@ body {
     color: #333333; 
 }
 
+
+
+
+
 /* リンク */
 a {
     color: #999966;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 /* パンくずリスト */
 .topicPath {
-    font-size: 12px;
+    font-size: 12px;    
+    color: #778899;   
 }
+
+.topicPath:hover{
+    text-decoration: none;
+}
+
+.examplePath {
+    font-size: 14px;    
+    color: #333333; 
+}
+
+
 
 /* ページの先頭へ戻る */
 .pagetop {
@@ -29,6 +50,7 @@ a {
 #page {
     width: 980px;
     margin: 0 auto;
+    
 }
 
 /* ページヘッダー */
@@ -49,17 +71,21 @@ a {
 /* ページボディ */
 #pageBody {
     margin-top: 30px;
+    
 }
 
 #pageBodyMain {
     width: 720px;
-   
+  
 }
 
 #pageBodySub {
     width: 220px;
     
 }
+
+
+
 
 /* --------サブカラム内の装飾--------- */
 /* 見出し */
@@ -75,7 +101,14 @@ a {
 /* 表 */
 
 /* 図版 */
+figure {
+    margin: 0;
+}
 
+
+header.articleDetailHead img {
+    width: 100%;
+}
 /* 見出し */
 
 /* 区切り線・余白 */
