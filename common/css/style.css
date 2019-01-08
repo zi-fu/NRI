@@ -3,14 +3,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:700');
 
-
 body { 
     color: #333333; 
 }
 
-
-
-
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 /* リンク */
 a {
@@ -25,7 +27,8 @@ a:hover{
 /* パンくずリスト */
 .topicPath {
     font-size: 12px;    
-    color: #778899;   
+    color: #778899;  
+    /* background-color: #999966;  */
 }
 
 .topicPath:hover{
@@ -37,8 +40,6 @@ a:hover{
     color: #333333; 
 }
 
-
-
 /* ページの先頭へ戻る */
 .pagetop {
     font-size: 12px;
@@ -48,7 +49,7 @@ a:hover{
 
 /* ページ */
 #page {
-    width: 980px;
+    width: 100%;
     margin: 0 auto;
     
 }
@@ -59,31 +60,43 @@ a:hover{
     line-height: 1.2;
     margin-bottom: 0;
     font-family: 'Vollkorn', serif;
+    background-color: #cccccc;
+}
+
+
+
+/* ページボディ */
+#pageBody {
+    width: 980px;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+
+#pageBodyMain {
+    width: 830px;
+    margin: 0 auto;
+}
+
+#pageBodyMain #subTitle {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    font-family: 'Vollkorn', serif;
+    background-color: #cccccc;
+}
+
+
+#pageBodySub {
+    width: 720px;
+    margin: 0 auto;
+    
 }
 
 /* ページフッター */
 #pageFoot {
     border-top: solid 1px #cccccc;
     margin-top: 15px;
-    
 }
-
-/* ページボディ */
-#pageBody {
-    margin-top: 30px;
-    
-}
-
-#pageBodyMain {
-    width: 720px;
-  
-}
-
-#pageBodySub {
-    width: 220px;
-    
-}
-
 
 
 
@@ -106,9 +119,6 @@ figure {
 }
 
 
-header.articleDetailHead img {
-    width: 100%;
-}
 /* 見出し */
 
 /* 区切り線・余白 */
@@ -117,3 +127,63 @@ header.articleDetailHead img {
 
 /* ----トップページの内容---- */
 /* メインビジュアル */
+#pageBody .mainVisual {
+    position: relative;
+}
+
+#pageBody .mainVisual .mainVisualText {
+    position: absolute;
+    bottom: 140px;
+    color: #FFF;
+    width: 400px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#pageBody .mainVisual img {
+    vertical-align: bottom;
+    width: 100%;
+}
+
+#pageBody .mainVisualText h3 {
+    font-size: 16px;
+    line-height: 1.231;
+    margin: 0;
+}
+
+#pageBody .mainVisualText h2 {
+    font-size: 28px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* 取組事例 */
+#pageBodyMain .CaseIndex:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#pageBodyMain .CaseIndex:article {
+    width: 300px;
+    float: left;
+}
+
+/* 強み */
+#pageBodyMain .StrongPoint:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#pageBodyMain .StrongPoint:article {
+    width: 300px;
+    float: left;
+}
+
+#pageBodyMain .StrongPoint h2 {
+    font-size: 28px;
+    line-height: 1.5;
+    margin: 0;
+    box-sizing: border-box;
+}
