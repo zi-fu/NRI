@@ -7,12 +7,10 @@ body {
     color: #333333; 
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+p {
+    font-size: 14px;
 }
+
 
 /* リンク */
 a {
@@ -24,11 +22,42 @@ a:hover{
     text-decoration: underline;
 }
 
+b {
+    color: #0c419a;
+    text-decoration: none;
+   
+    
+}
+
+
+/* 取組事例 */
+
+
+
+/* 強み */
+aside .StrongList {
+    
+    text-align: center;
+    color: #0c419a;
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+  
+    /* padding: 15px 20px;
+    border: solid 1px #ccc;
+    background: #FFF;
+  
+    position: relative;
+    margin: 0 0 20px 0; */
+}
+
+
 /* パンくずリスト */
 .topicPath {
     font-size: 12px;    
     color: #778899;  
-    /* background-color: #999966;  */
+    margin-top: 70px;
+
 }
 
 .topicPath:hover{
@@ -38,6 +67,14 @@ a:hover{
 .examplePath {
     font-size: 14px;    
     color: #333333; 
+}
+
+.pdfPath {
+    font-size: 14px;    
+    color:#FFF;
+    background-color: #0000FF;
+    
+  
 }
 
 /* ページの先頭へ戻る */
@@ -59,8 +96,7 @@ a:hover{
     font-size: 30px;
     line-height: 1.2;
     margin-bottom: 0;
-    font-family: 'Vollkorn', serif;
-    background-color: #cccccc;
+    background-color: #FFF;
 }
 
 
@@ -78,11 +114,10 @@ a:hover{
 }
 
 #pageBodyMain #subTitle {
-    font-size: 30px;
+    font-size: 14px;
     line-height: 1.2;
     margin-bottom: 0;
-    font-family: 'Vollkorn', serif;
-    background-color: #cccccc;
+    padding: 25px 15px;
 }
 
 
@@ -111,6 +146,7 @@ a:hover{
 
 /* リスト */
 
+
 /* 表 */
 
 /* 図版 */
@@ -122,8 +158,13 @@ figure {
 /* 見出し */
 
 /* 区切り線・余白 */
+#pageBodySub {
+    border-top: #333333;
+    margin-top: 30px;
 
-/* センター寄せ画像 */
+}
+
+
 
 /* ----トップページの内容---- */
 /* メインビジュアル */
@@ -152,7 +193,7 @@ figure {
 }
 
 #pageBody .mainVisualText h2 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.5;
     margin: 0;
 }
@@ -169,6 +210,23 @@ figure {
     float: left;
 }
 
+#pageBodyMain .articleList {
+    border: solid 1px #cccccc;
+    margin-bottom: 30px;
+    width: 205px;
+    /* height: 304px; */
+}
+
+#pageBodyMain .articleList a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#pageBodyMain .articleList img {
+    vertical-align: bottom;
+}
+
+
 /* 強み */
 #pageBodyMain .StrongPoint:after {
     content: "";
@@ -182,8 +240,21 @@ figure {
 }
 
 #pageBodyMain .StrongPoint h2 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.5;
     margin: 0;
     box-sizing: border-box;
 }
+
+#pageBodyMain .StrongPoint p{
+    border: solid 1px #cccccc;
+    background-color: #FFF;
+
+}
+
+#pageBodyMain .StrongPoint {
+    background-color: #deecf8;
+}
+
+
+
