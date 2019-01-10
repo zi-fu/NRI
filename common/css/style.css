@@ -1,16 +1,8 @@
 
-
-
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:700');
 
-body { 
-    color: #333333; 
-}
-
-p {
-    font-size: 14px;
-}
-
+body { color: #333333; }
+p { font-size: 14px;}
 
 /* リンク */
 a {
@@ -24,12 +16,8 @@ a:hover{
 
 b {
     color: #0c419a;
-    text-decoration: none;
-   
-    
+    text-decoration: none;    
 }
-
-
 /* 取組事例 */
 
 
@@ -39,9 +27,10 @@ aside .StrongList {
     
     text-align: center;
     color: #0c419a;
-    width: 200px;
+    width: 210px;
     display: inline-block;
     vertical-align: middle;
+    padding: 10px ;
   
     /* padding: 15px 20px;
     border: solid 1px #ccc;
@@ -50,6 +39,15 @@ aside .StrongList {
     position: relative;
     margin: 0 0 20px 0; */
 }
+
+aside .StrongList p{
+    
+    text-align: center;
+    padding: 10px 20px;
+
+}
+
+
 
 
 /* パンくずリスト */
@@ -73,8 +71,7 @@ aside .StrongList {
     font-size: 14px;    
     color:#FFF;
     background-color: #0000FF;
-    
-  
+    text-align: center;
 }
 
 /* ページの先頭へ戻る */
@@ -83,6 +80,16 @@ aside .StrongList {
     text-align: right;
     margin-top: 30px;
 }
+
+.pageBack {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 90px;
+    /* padding-top: 50px; */
+
+}
+
 
 /* ページ */
 #page {
@@ -120,12 +127,68 @@ aside .StrongList {
     padding: 25px 15px;
 }
 
-
+/* 区切り線・余白 */
 #pageBodySub {
-    width: 720px;
-    margin: 0 auto;
-    
 }
+
+#pageBodySub .localNaviMain {
+    
+    border-top: solid 2px #000000;
+    border-bottom: dotted 1px #cccccc;
+    margin-top: 100px;
+
+}
+
+#pageBodySub .localNaviMain h2{
+    font-size: 22px;
+}
+
+#pageBodySub .localNaviMain h3{
+    border-top: dotted 1px #cccccc;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+#pageBodySub .localNaviMain a{
+    color: #0c419a;
+    font-size: 15px;
+}
+
+#pageBodySub .localNaviMain ul li{
+    /* list-style-image: url("images/nri11.jpeg"); */
+    font-size: 14px;
+    line-height: 1.429;
+    margin-bottom: 12px;
+    list-style-type: none;
+    background-image: url("../../images/nri11.png"); 
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    padding-left: 20px;
+}
+
+
+/* SNS */
+#pageBodySub .snsFollow {
+    border-top: solid 2px #cccccc;
+    border-bottom: solid 2px #cccccc;
+    text-align: center;
+    color: #0000FF;
+    margin-bottom: 45px;
+}
+
+/* サブナビ */
+#pageBodySub .localNaviSub h5{
+    font-size: 15px;
+    border-style: solid; 
+    border-width: 1px 0;
+    border-color: #cccccc;
+    padding: 15px;
+}
+
+
+
+
+
 
 /* ページフッター */
 #pageFoot {
@@ -157,12 +220,7 @@ figure {
 
 /* 見出し */
 
-/* 区切り線・余白 */
-#pageBodySub {
-    border-top: #333333;
-    margin-top: 30px;
 
-}
 
 
 
