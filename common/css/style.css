@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:700');
 
+
 body { color: #333333; }
 p { font-size: 14px;}
 
@@ -9,53 +10,76 @@ a {
     color: #999966;
     text-decoration: none;
 }
-
 a:hover{
     text-decoration: underline;
 }
-
 b {
     color: #0c419a;
-    text-decoration: none;    
+    text-decoration: none;
 }
+
+c {
+    color: #0c419a;
+    text-decoration: none;
+}
+c:hover{
+    text-decoration: underline;
+}
+
+/* 次のページ */
+.nextPage {
+    margin: 50px 0px;
+}
+
+.nextPage .next{
+    float: right;
+    font-size: 16px;
+    width: 180px;
+    height: 100%;
+    background-image: url("../../images/nri11.png");
+    background-repeat: no-repeat;
+    background-position: 210px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 1.429;
+}
+.nextPage p{
+    float: left;
+    font-size: 16px;
+    width: 180px;
+    height: 100%;
+    margin: 0px;
+    background-image: url("../../images/nri12.png");
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding-left: 20px;
+    line-height: 1.429;
+    margin-bottom: 12px;
+}
+
+
+
 /* 取組事例 */
-
-
-
 /* 強み */
 aside .StrongList {
-    
     text-align: center;
     color: #0c419a;
     width: 210px;
     display: inline-block;
     vertical-align: middle;
     padding: 10px ;
-  
-    /* padding: 15px 20px;
-    border: solid 1px #ccc;
-    background: #FFF;
-  
-    position: relative;
-    margin: 0 0 20px 0; */
 }
 
 aside .StrongList p{
-    
     text-align: center;
     padding: 10px 20px;
-
 }
-
-
-
 
 /* パンくずリスト */
 .topicPath {
-    font-size: 12px;    
-    color: #778899;  
+    font-size: 12px;
+    color: #778899;
     margin-top: 70px;
-
 }
 
 .topicPath:hover{
@@ -63,15 +87,17 @@ aside .StrongList p{
 }
 
 .examplePath {
-    font-size: 14px;    
-    color: #333333; 
+    color: #333333;
 }
 
+/* PDF */
 .pdfPath {
-    font-size: 14px;    
+    font-size: 14px;
     color:#FFF;
-    background-color: #0000FF;
+    background-color: #0c419a;
     text-align: center;
+    margin: 0 auto;
+    width: 300px;
 }
 
 /* ページの先頭へ戻る */
@@ -86,40 +112,40 @@ aside .StrongList p{
     text-align: left;
     margin-top: 70px;
     margin-bottom: 90px;
-    /* padding-top: 50px; */
-
 }
-
-
 /* ページ */
 #page {
-    width: 100%;
     margin: 0 auto;
-    
 }
-
 /* ページヘッダー */
-#pageHead #siteTitle {
-    font-size: 30px;
-    line-height: 1.2;
-    margin-bottom: 0;
-    background-color: #FFF;
+#pageHead .headImg{
+    background-color:#FFF;
+  
+}
+#pageHead .headImg .fix{
+    top: 0;
 }
 
-
+#page #pageHead #migiue{
+    float:right;
+}
 
 /* ページボディ */
-#pageBody {
-    width: 980px;
+#pageBody {    
     margin-top: 30px;
     margin: 0 auto;
+}
+
+#articleDetailHead img{
+    width: 100%;
+    height: 250px;
+    margin: 20px 0px;
 }
 
 #pageBodyMain {
     width: 830px;
     margin: 0 auto;
 }
-
 #pageBodyMain #subTitle {
     font-size: 14px;
     line-height: 1.2;
@@ -127,46 +153,83 @@ aside .StrongList p{
     padding: 25px 15px;
 }
 
+
+
+
+/* DXの取組み事例 */
+#pageBodyMain .asideDetail .articleList{
+    display: block;
+    width: 183px;
+    position: relative;
+    margin: 10px;
+    float: left;
+}
+
+#pageBodyMain .asideDetail .articleList h6{
+    position: absolute;
+    color:#FFF;
+    padding: 5px;
+    background-color: #0c419a;
+    margin: 0px;
+    top:0;
+    width: 175px;
+}
+#pageBodyMain .asideDetail .articleList p{
+    line-height: 1.531;
+    font-size: 14px;
+}
+#pageBodyMain .asideDetail .articleList p2{
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 35px;
+    padding: 8px 10px;
+
+
+
+}
+#pageBodyMain .asideDetail .articleList img {
+    border: solid 1px #cccccc;
+    margin: 0px;
+    padding: 0px;
+    width: 183px;
+}
+
+#pageBodyMain .asideDetail .articleList_clearfix{
+    clear: left;
+}
+
 /* 区切り線・余白 */
 #pageBodySub {
 }
 
 #pageBodySub .localNaviMain {
-    
     border-top: solid 2px #000000;
     border-bottom: dotted 1px #cccccc;
     margin-top: 100px;
-
 }
-
 #pageBodySub .localNaviMain h2{
     font-size: 22px;
 }
-
 #pageBodySub .localNaviMain h3{
     border-top: dotted 1px #cccccc;
     margin-top: 30px;
     padding-top: 30px;
 }
-
 #pageBodySub .localNaviMain a{
     color: #0c419a;
     font-size: 15px;
 }
-
 #pageBodySub .localNaviMain ul li{
-    /* list-style-image: url("images/nri11.jpeg"); */
     font-size: 14px;
     line-height: 1.429;
     margin-bottom: 12px;
     list-style-type: none;
-    background-image: url("../../images/nri11.png"); 
+    background-image: url("../../images/nri11.png");
     background-repeat: no-repeat;
     background-position: 0 4px;
     padding-left: 20px;
 }
-
-
 /* SNS */
 #pageBodySub .snsFollow {
     border-top: solid 2px #cccccc;
@@ -175,54 +238,24 @@ aside .StrongList p{
     color: #0000FF;
     margin-bottom: 45px;
 }
-
 /* サブナビ */
 #pageBodySub .localNaviSub h5{
     font-size: 15px;
-    border-style: solid; 
+    border-style: solid;
     border-width: 1px 0;
     border-color: #cccccc;
     padding: 15px;
 }
-
-
-
-
-
-
 /* ページフッター */
-#pageFoot {
+#copyright {
     border-top: solid 1px #cccccc;
     margin-top: 15px;
 }
-
-
-
-/* --------サブカラム内の装飾--------- */
-/* 見出し */
-
-/* おしらせ */
-
-/* ローカルナビ */
-
-/* ------メインカラム内の装飾--------- */
-
-/* リスト */
-
-
-/* 表 */
 
 /* 図版 */
 figure {
     margin: 0;
 }
-
-
-/* 見出し */
-
-
-
-
 
 /* ----トップページの内容---- */
 /* メインビジュアル */
@@ -230,11 +263,15 @@ figure {
     position: relative;
 }
 
+#pageBody .mainVisual p{
+    padding-left: 220px;
+}
+
 #pageBody .mainVisual .mainVisualText {
     position: absolute;
-    bottom: 140px;
+    bottom: 150px;
     color: #FFF;
-    width: 400px;
+    width: 100%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -245,74 +282,50 @@ figure {
 }
 
 #pageBody .mainVisualText h3 {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.231;
-    margin: 0;
+    margin: 20pxs;
+    padding-left: 220px;
+    font-weight: normal;
 }
 
 #pageBody .mainVisualText h2 {
     font-size: 24px;
     line-height: 1.5;
     margin: 0;
+    padding-left: 220px;
 }
 
-/* 取組事例 */
-#pageBodyMain .CaseIndex:after {
-    content: "";
-    clear: both;
-    display: block;
-}
 
-#pageBodyMain .CaseIndex:article {
-    width: 300px;
-    float: left;
-}
-
-#pageBodyMain .articleList {
-    border: solid 1px #cccccc;
-    margin-bottom: 30px;
-    width: 205px;
-    /* height: 304px; */
-}
-
-#pageBodyMain .articleList a {
-    color: inherit;
-    text-decoration: none;
-}
-
-#pageBodyMain .articleList img {
-    vertical-align: bottom;
-}
 
 
 /* 強み */
-#pageBodyMain .StrongPoint:after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-#pageBodyMain .StrongPoint:article {
-    width: 300px;
-    float: left;
+#pageBodyMain .StrongPoint {
+    background-color: #deecf8;
+    text-align: center;
+    width: 100%;
 }
 
 #pageBodyMain .StrongPoint h2 {
     font-size: 24px;
-    line-height: 1.5;
-    margin: 0;
     box-sizing: border-box;
+    width: 100%;
+    text-align: left;
 }
 
-#pageBodyMain .StrongPoint p{
+#pageBodyMain .StrongPoint p {
     border: solid 1px #cccccc;
     background-color: #FFF;
-
+    display: inline-block;
+    width: 180px;
+    height: 70px;
+    background-image: url("../../images/nri11.png");
+    background-repeat: no-repeat;
+    background-position: 0 20px;
+    line-height: 1.429;
+    margin-bottom: 12px;
 }
 
-#pageBodyMain .StrongPoint {
-    background-color: #deecf8;
-}
 
 
 
