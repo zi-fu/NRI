@@ -44,19 +44,6 @@ a.StrongList:hover{
     padding-right: 20px;
     line-height: 1.429;
 }
-.nextPage p{
-    float: left;
-    font-size: 16px;
-    width: 180px;
-    height: 100%;
-    margin: 0px;
-    background-image: url("../../images/nri12.png");
-    background-repeat: no-repeat;
-    background-position: 0px;
-    padding-left: 20px;
-    line-height: 1.429;
-    margin-bottom: 12px;
-}
 
 /* パンくずリスト */
 .topicPath {
@@ -104,9 +91,6 @@ a.StrongList:hover{
 #pageHead .headImg{
     background-color:#FFF;
 }
-/* #pageHead:hover .headImg .fix{
-    top: 0;
-} */
 
 #page #pageHead #migiue{
     float:right;
@@ -243,24 +227,37 @@ a.StrongList:hover{
     border-top: dotted 1px #cccccc;
     margin-top: 30px;
     padding-top: 30px;
+    
 }
 #pageBodySub .localNaviMain a{
     color: #0c419a;
     font-size: 15px;
 }
-#pageBodySub .localNaviMain ul li{
+
+.localNavi {
+    display: block;
+}
+
+.localNavi ul li{
     font-size: 14px;
     line-height: 1.429;
-    margin-bottom: 12px;
     list-style-type: none;
     background-image: url("../../images/nri11.png");
     background-repeat: no-repeat;
     background-position: 0 4px;
-    padding-left: 20px;
-    display: block;
-    float: left;
-    width: 200px;
+    padding-left: 15px; 
+    width: 25%;
+    position: relative;
+    margin: 10px;
 }
+
+.SubNavi{
+    display: block;
+    width: 25%;
+    position: relative;
+    float: left;
+}
+
 /* SNS */
 #pageBodySub .snsFollow {
     border-top: solid 2px #cccccc;
@@ -389,8 +386,5 @@ figure {
     margin: 0 auto;
 }
 
-#pageBodySub  ul li{
-    /* padding-left: 220px; */
-}
 
 
