@@ -12,44 +12,53 @@ a {
 a:hover{
     text-decoration: underline;
 }
-a.nextPage {
-    color: #0c419a;
-    text-decoration: none;
-}
-a.nextPage:hover {
-    text-decoration: underline;
-}
-a.StrongList {
-    color: #0c419a;
-    text-decoration: none;
-}
-a.StrongList:hover{
-    text-decoration: underline;
-}
 
 /* 次のページ */
 .nextPage {
-    margin: 50px 0px;
+    margin: 60px 0px;
+    margin-top: 120px;
+}
+.nextPage__next {
+    float: left;
+    color: #0c419a;
+    text-decoration: none;
+    background-image: url("../../images/nri12.png");
+    background-repeat: no-repeat;
+    background-position: 0px;
+    text-align: right;
+    padding-left: 20px;
+}
+.nextPage__next:hover {
+    text-decoration: underline;
 }
 
-.nextPage.next p{
+.nextPage__back {
     float: right;
-    font-size: 16px;
-    width: 180px;
-    height: 100%;
+    color: #0c419a;
+    text-decoration: none;
     background-image: url("../../images/nri11.png");
     background-repeat: no-repeat;
-    background-position: 210px;
+    background-position: 130px;
     text-align: right;
     padding-right: 20px;
-    line-height: 1.429;
+}
+.nextPage__back:hover {
+    text-decoration: underline;
 }
 
+.StrongList_a {
+    color: #0c419a;
+    text-decoration: none;
+}
+
+.StrongList_a:hover {
+    text-decoration: none;
+}
 /* パンくずリスト */
 .topicPath {
     font-size: 12px;
     color: hsl(208, 12%, 21%);
-    margin-top: 70px;
+    margin-top: 130px;
 }
 
 .topicPath:hover{
@@ -88,9 +97,12 @@ a.StrongList:hover{
     margin: 0 auto;
 }
 /* ページヘッダー */
-#pageHead .headImg{
-    background-color:#FFF;
-}
+ .headImg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+} 
 
 #page #pageHead #migiue{
     float:right;
@@ -118,6 +130,18 @@ a.StrongList:hover{
     margin-top: 30px;
     padding-left: 40px;
     display: inline-block;
+    background-image: url("../../images/nri21.png");
+    background-repeat: no-repeat;
+    line-height: 1.429;
+    background-size: 20px;
+    background-position: 10px;
+}
+
+.CaseIndex h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-left: 40px;
     background-image: url("../../images/nri21.png");
     background-repeat: no-repeat;
     line-height: 1.429;
@@ -287,7 +311,7 @@ figure {
 
 /* ----トップページの内容---- */
 /* メインビジュアル */
-#pageBody .mainVisual {
+.mainVisual {
     position: relative;
 }
 
@@ -324,17 +348,16 @@ figure {
     padding-left: 220px;
 }
 
-
 /* 取組事例 */
 /* 強み */
-#pageBodyMain .StrongPoint {
+.StrongPoint {
     background-color: #deecf8;
     text-align: center;
     width: 100%;
     padding-bottom: 30px;
 }
 
-#pageBodyMain .StrongPoint h2 {
+.StrongPoint h2 {
     font-size: 16px;
     box-sizing: border-box;
     width: 100%;
@@ -345,7 +368,7 @@ figure {
     margin: 0px;
 }
 
-#pageBodyMain .StrongPoint p {
+.StrongPoint p {
     font-size: 16px;
     height: 100%;
     padding: 0 10px;
@@ -354,14 +377,6 @@ figure {
 #flexbox {
     height: 70px;
     margin-bottom: 30px;
-    vertical-align: middle;
-}
-
-#flexbox .StrongList p{
-    padding: 0 20px;
-    vertical-align: middle;
-    height: 100%;
-    line-height: 1.2;
     vertical-align: middle;
 }
 
@@ -379,6 +394,15 @@ figure {
     background-position: 3% 50%;
 }
 
+.StrongList:hover{
+    background-color:  #eeeeee;     
+}
+
+.StrongList p{
+    padding: 0 20px;
+    vertical-align: middle;
+    height: 100%;
+}
 
 #pageBodySub {
     width: 980px;
