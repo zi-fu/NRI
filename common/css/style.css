@@ -1,17 +1,40 @@
-
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:700');
 
-body { color: #333333; }
+body { color: .333333; }
 p { font-size: 14px;}
 
+.page {
+    margin: 0 auto;
+}
 /* リンク */
 a {
-    color: #999966;
+    color: .999966;
     text-decoration: none;
 }
 a:hover{
     text-decoration: underline;
 }
+
+/* ページヘッダー画像 */
+.head_image {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+} 
+.migiue{
+    float:right;
+}
+.migiueGray{
+    float:right;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.migiueGray:hover{
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+}
+
 
 /* 次のページ */
 .nextPage {
@@ -20,7 +43,7 @@ a:hover{
 }
 .nextPage__next {
     float: left;
-    color: #0c419a;
+    color: .0c419a;
     text-decoration: none;
     background-image: url("../../images/nri12.png");
     background-repeat: no-repeat;
@@ -34,7 +57,7 @@ a:hover{
 
 .nextPage__back {
     float: right;
-    color: #0c419a;
+    color: .0c419a;
     text-decoration: none;
     background-image: url("../../images/nri11.png");
     background-repeat: no-repeat;
@@ -47,7 +70,7 @@ a:hover{
 }
 
 .StrongList_a {
-    color: #0c419a;
+    color: .0c419a;
     text-decoration: none;
 }
 
@@ -66,7 +89,7 @@ a:hover{
 }
 
 .examplePath {
-    color: #333333;
+    color: .333333;
 }
 
 /* PDF */
@@ -92,39 +115,14 @@ a:hover{
     margin-top: 70px;
     margin-bottom: 90px;
 }
-/* ページ */
-#page {
-    margin: 0 auto;
-}
-/* ページヘッダー */
- .headImg {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-} 
 
-#page #pageHead #migiue{
-    float:right;
-}
-
-#page #pageHead #migiueGray{
-    float:right;
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-}
-
-#page #pageHead #migiueGray:hover{
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%);
-}
 
 /* ページボディ */
-#pageBody {
+.pageBody {
     margin-top: 30px;
     margin: 0 auto;
 }
-#pageBody h1{
+.pageBody h1{
     font-size: 22px;
     font-weight: bold;
     margin-top: 30px;
@@ -149,56 +147,56 @@ a:hover{
     background-position: 10px;
 }
 
-#articleDetailHead img{
+.articleDetailHead img{
     width: 100%;
     height: 250px;
     margin: 20px 0px;
 }
 
-#articleDetailBody img{
+.articleDetailBody img{
     width: 100%;
     margin: 20px 0px;
 }
 
-#pageBodyMain {
+.pageBodyMain {
     width: 830px;
     margin: 0 auto;
 }
-#pageBodyMain #subTitle {
+.pageBodyMain .subTitle {
     font-size: 14px;
     line-height: 1.2;
     margin-bottom: 0;
     padding: 25px 15px;
 }
-#pageBodyMain .img{
+.pageBodyMain .img{
    width: 800px;
 }
 
-#pageBodyMain .SnsImg{
+.pageBodyMain .SnsImg{
     text-align: right;
 }
 
-#pageBodyMain .articleDetail p {
+.pageBodyMain .articleDetail p {
     font-size: 16px;
     line-height: 1.7;
 }
 
-#Snsimage{
+.Snsimage{
   position: relative;
   top: 1px;
   left: 1px;
 }
 
-#pdfStyle{
+.pdfStyle{
     text-align: center;
     opacity: 1;
 }
-#pdfStyle:hover img {
+.pdfStyle:hover img {
     opacity: .7;
 }
 
 /* DXの取組み事例 */
-#pageBodyMain .asideDetail .articleList{
+.pageBodyMain .asideDetail .articleList{
     display: block;
     width: 183px;
     position: relative;
@@ -206,7 +204,7 @@ a:hover{
     float: left;
 }
 
-#pageBodyMain .asideDetail .articleList h6{
+.pageBodyMain .asideDetail .articleList h6{
     position: absolute;
     color:#FFF;
     padding: 5px;
@@ -215,11 +213,11 @@ a:hover{
     top:0;
     width: 175px;
 }
-#pageBodyMain .asideDetail .articleList p{
+.pageBodyMain .asideDetail .articleList p{
     line-height: 1.531;
     font-size: 14px;
 }
-#pageBodyMain .asideDetail .articleList p2{
+.pageBodyMain .asideDetail .articleList p2{
     border: solid 1px #cccccc;
     border-radius: 10px;
     font-size: 12px;
@@ -227,34 +225,34 @@ a:hover{
     padding: 8px 10px;
 }
 
-#pageBodyMain .asideDetail .articleList img {
+.pageBodyMain .asideDetail .articleList img {
     border: solid 1px #cccccc;
     margin: 0px;
     padding: 0px;
     width: 183px;
 }
 
-#pageBodyMain .asideDetail .articleList_clearfix{
+.pageBodyMain .asideDetail .articleList_clearfix{
     clear: left;
 }
 
 /* 区切り線・余白 */
-#pageBodySub .localNaviMain {
-    border-top: solid 2px #000000;
+.pageBodySub .localNaviMain {
+    border-top: solid 2px .000000;
     border-bottom: dotted 1px #cccccc;
     margin-top: 100px;
 }
-#pageBodySub .localNaviMain h2{
+.pageBodySub .localNaviMain h2{
     font-size: 22px;
 }
-#pageBodySub .localNaviMain h3{
+.pageBodySub .localNaviMain h3{
     border-top: dotted 1px #cccccc;
     margin-top: 30px;
     padding-top: 30px;
     
 }
-#pageBodySub .localNaviMain a{
-    color: #0c419a;
+.pageBodySub .localNaviMain a{
+    color: .0c419a;
     font-size: 15px;
 }
 
@@ -283,15 +281,15 @@ a:hover{
 }
 
 /* SNS */
-#pageBodySub .snsFollow {
+.pageBodySub .snsFollow {
     border-top: solid 2px #cccccc;
     border-bottom: solid 2px #cccccc;
     text-align: center;
-    color: #0000FF;
+    color: .0000FF;
     margin-bottom: 45px;
 }
 /* サブナビ */
-#pageBodySub .localNaviSub h5{
+.pageBodySub .localNaviSub h5{
     font-size: 15px;
     border-style: solid;
     border-width: 1px 0;
@@ -299,7 +297,7 @@ a:hover{
     padding: 15px;
 }
 /* ページフッター */
-#copyright {
+.copyright {
     border-top: solid 1px #cccccc;
     margin-top: 15px;
 }
@@ -315,11 +313,11 @@ figure {
     position: relative;
 }
 
-#pageBody .mainVisual p{
+.pageBody .mainVisual p{
     padding-left: 220px;
 }
 
-#pageBody .mainVisual .mainVisualText {
+.pageBody .mainVisual .mainVisualText {
     position: absolute;
     bottom: 150px;
     color: #FFF;
@@ -328,12 +326,12 @@ figure {
     box-sizing: border-box;
 }
 
-#pageBody .mainVisual img {
+.pageBody .mainVisual img {
     vertical-align: bottom;
     width: 100%;
 }
 
-#pageBody .mainVisualText h3 {
+.pageBody .mainVisualText h3 {
     font-size: 20px;
     line-height: 1.231;
     margin: 20pxs;
@@ -341,7 +339,7 @@ figure {
     font-weight: normal;
 }
 
-#pageBody .mainVisualText h2 {
+.pageBody .mainVisualText h2 {
     font-size: 24px;
     line-height: 1.5;
     margin: 0;
@@ -374,7 +372,7 @@ figure {
     padding: 0 10px;
 }
 
-#flexbox {
+.flexbox {
     height: 70px;
     margin-bottom: 30px;
     vertical-align: middle;
@@ -404,7 +402,7 @@ figure {
     height: 100%;
 }
 
-#pageBodySub {
+.pageBodySub {
     width: 980px;
     position: relative;
     margin: 0 auto;
