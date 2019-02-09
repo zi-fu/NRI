@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:700');
 
-body { color: .333333; }
+body { color: .333333;}
 p { font-size: 14px;}
 
 .page {
@@ -40,8 +40,6 @@ a:hover{
     top: 10px;
     left: 1px;
 }
-
-
 
 /* 次のページ */
 .nextPage {
@@ -113,8 +111,16 @@ a:hover{
     text-align: left;
     margin-top: 70px;
     margin-bottom: 90px;
+    padding-left: 15px;
+    background-image: url("../../images/nri12.png");
+    background-repeat: no-repeat;
+    background-position: 0 4px;
 }
 
+.pageBack a{
+    color: #0c419a;
+    font-size: 15px;
+}
 
 /* ページボディ */
 .pageBody {
@@ -235,42 +241,57 @@ a:hover{
 }
 
 
-/* 区切り線・余白 */
-.pageBodySub .localNaviMain {
-    border-top: solid 2px .000000;
-    border-bottom: dotted 1px #cccccc;
-    margin-top: 100px;
-}
-.pageBodySub .localNaviMain h2{
-    font-size: 22px;
-}
-.pageBodySub .localNaviMain h3{
-    border-top: dotted 1px #cccccc;
-    margin-top: 30px;
-    padding-top: 30px;
 
-}
-.pageBodySub .localNaviMain a{
-    color: .0c419a;
-    font-size: 15px;
+.pageBodySub {
+    width: 1100px;
+    margin: 0 auto;
 }
 
-.localNavi {
-    display: block;
+/* SNS */
+.snsFollow {
+    border-top: solid 2px #cccccc;
+    border-bottom: solid 2px #cccccc;
+    color: #0000FF;
+    margin-bottom: 45px;
 }
 
-.localNavi ul li{
-    font-size: 14px;
-    line-height: 1.429;
-    list-style-type: none;
+.snsFollow h4{
+    font-size: 20px;
+    margin: 30px;
+    padding-top: 5px;
+    padding-left: 300px;
+}
+.snsFollow img{
+    margin: 30px 20px;
+}
+.snsFollow__float{
+    float: left;
+}
+
+
+.localNaviSub li{
+    list-style: none;
+    padding-left: 15px;
+    margin: 5px 10px;
     background-image: url("../../images/nri11.png");
     background-repeat: no-repeat;
     background-position: 0 4px;
-    padding-left: 15px;
-    width: 25%;
-    position: relative;
-    margin: 10px;
 }
+
+.localNaviSub h5{
+    font-size: 15px;
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    padding: 15px;
+    margin: 5px;
+    padding-left: 15px;
+    margin: 5px 10px;
+    background-image: url("../../images/nri11.png");
+    background-repeat: no-repeat;
+    background-position: 0 18px;
+}
+
+
 
 .SubNavi{
     display: block;
@@ -279,22 +300,50 @@ a:hover{
     float: left;
 }
 
-/* SNS */
-.pageBodySub .snsFollow {
-    border-top: solid 2px #cccccc;
-    border-bottom: solid 2px #cccccc;
-    text-align: center;
-    color: .0000FF;
-    margin-bottom: 45px;
+
+
+/* 区切り線・余白 */
+.localNaviMain {
+    border-top: solid 2px #000000;
+    border-bottom: dotted 1px #cccccc;
+    margin-top: 100px;
+    padding-bottom: 30px;
 }
-/* サブナビ */
-.pageBodySub .localNaviSub h5{
+.localNaviMain h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+.localNaviMain h3{
+    border-top: dotted 1px #cccccc;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.localNaviMain a{
+    color: #0c419a;
     font-size: 15px;
-    border-style: solid;
-    border-width: 1px 0;
-    border-color: #cccccc;
-    padding: 15px;
 }
+
+
+.localNavi__company{
+    width: 1100px;
+}
+
+.localNavi__company ul li{
+    text-align:left;
+    float: left;
+    width: 20%;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.429;
+    padding-left: 15px;
+    margin: 5px 10px;
+    background-image: url("../../images/nri11.png");
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+
+}
+
 /* ページフッター */
 .copyright {
     border-top: solid 1px #cccccc;
@@ -368,7 +417,6 @@ figure {
 
 .StrongPoint p{
     font-size: 16px;
-
 }
 
 .StrongList_center{
@@ -412,11 +460,6 @@ figure {
     text-decoration: none;
 }
 
-.pageBodySub {
-    width: 980px;
-    position: relative;
-    margin: 0 auto;
-}
 
 
 
