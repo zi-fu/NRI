@@ -101,9 +101,8 @@ a:hover{
 
 /* ページの先頭へ戻る */
 .pagetop {
-    font-size: 12px;
     text-align: right;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .pageBack {
@@ -111,10 +110,14 @@ a:hover{
     text-align: left;
     margin-top: 70px;
     margin-bottom: 90px;
-    padding-left: 15px;
     background-image: url("../../images/nri12.png");
     background-repeat: no-repeat;
-    background-position: 0 4px;
+    background-position: 245px 4px;
+    width: 100%;
+    max-width: 1110px;
+    padding-left: 270px;
+  
+
 }
 
 .pageBack a{
@@ -243,8 +246,11 @@ a:hover{
 
 
 .pageBodySub {
-    width: 1100px;
-    margin: 0 auto;
+    /* width: 100%; */
+    /* max-width: 1000px; */
+   
+    margin: 0 ;
+    /* padding-left: 250px; */
 }
 
 /* SNS */
@@ -259,7 +265,7 @@ a:hover{
     font-size: 20px;
     margin: 30px;
     padding-top: 5px;
-    padding-left: 300px;
+    padding-left: 620px;
 }
 .snsFollow img{
     margin: 30px 20px;
@@ -268,14 +274,13 @@ a:hover{
     float: left;
 }
 
-
 .localNaviSub li{
     list-style: none;
     padding-left: 15px;
     margin: 5px 10px;
     background-image: url("../../images/nri11.png");
     background-repeat: no-repeat;
-    background-position: 0 4px;
+    background-position: 0 10px;
 }
 
 .localNaviSub h5{
@@ -290,7 +295,10 @@ a:hover{
     background-repeat: no-repeat;
     background-position: 0 18px;
 }
-
+.localNaviSub a{
+    color:#000;
+    line-height: 1.929;
+}
 
 
 .SubNavi{
@@ -300,24 +308,29 @@ a:hover{
     float: left;
 }
 
-
-
 /* 区切り線・余白 */
 .localNaviMain {
-    border-top: solid 2px #000000;
-    border-bottom: dotted 1px #cccccc;
+    
     margin-top: 100px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 ;
+    padding-left: 245px;
 }
 .localNaviMain h2{
-    margin-top: 30px;
-    margin-bottom: 40px;
+    border-top: solid 2px #000000;
+    border-bottom: dotted 1px #cccccc;
+    margin-top: 130px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 35px;
     font-size: 22px;
 }
 .localNaviMain h3{
-    border-top: dotted 1px #cccccc;
-    margin-top: 30px;
-    padding-top: 30px;
+    
+    margin-top: 0px;
+    padding-top: 40px;
 }
 .localNaviMain a{
     color: #0c419a;
@@ -326,7 +339,9 @@ a:hover{
 
 
 .localNavi__company{
-    width: 1100px;
+    max-width: 1110px;
+    border-bottom: dotted 1px #cccccc;
+    padding-bottom: 30px;
 }
 
 .localNavi__company ul li{
@@ -335,20 +350,15 @@ a:hover{
     width: 20%;
     list-style-type: none;
     font-size: 14px;
-    line-height: 1.429;
+    line-height: 2.329;
     padding-left: 15px;
     margin: 5px 10px;
     background-image: url("../../images/nri11.png");
     background-repeat: no-repeat;
-    background-position: 0 4px;
-
+    background-position: 0 10px;
 }
 
-/* ページフッター */
-.copyright {
-    border-top: solid 1px #cccccc;
-    margin-top: 15px;
-}
+
 
 /* 図版 */
 figure {
@@ -458,6 +468,20 @@ figure {
 
 .StrongList_a:hover {
     text-decoration: none;
+}
+
+.newList{
+    margin-top: 60px;
+}
+.newList a{
+    font-size: 12px;
+    color: #999;
+    padding-left: 10px;
+    
+}
+.border_right{
+    border-right: solid 1px #999;
+    padding-right: 16px;   
 }
 
 
