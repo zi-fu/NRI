@@ -224,7 +224,7 @@ a:hover{text-decoration: underline;}
     font-size: 20px;
     margin: 30px;
     padding-top: 5px;
-    padding-left: 620px;
+    padding-left: 580px;
 }
 .snsFollow img{
     margin: 30px 20px;
@@ -405,10 +405,11 @@ figure {
     text-decoration: none;
 }
 .newList{
-    margin-top: 80px;
+    padding-top: 80px;
     width: 100%;
     max-width: 1110px;
-    padding-left: 245px;
+    margin: auto;
+    /* padding-left: 245px; */
 }
 .newList a{
     font-size: 14px;
