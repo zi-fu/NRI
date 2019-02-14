@@ -8,6 +8,16 @@ a {
     text-decoration: none;
 }
 a:hover{text-decoration: underline;}
+h1{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 220px;
+}
+
 /* ヘッダー画像 */
 .head_image {
     position: fixed;
@@ -111,12 +121,12 @@ a:hover{text-decoration: underline;}
     margin-top: 30px;
     margin: auto;
 }
-.pageBody h1{
+
+.articleDetail h2{
     font-size: 22px;
     font-weight: bold;
     margin-top: 30px;
     padding-left: 40px;
-    display: inline-block;
     background-image: url("../../images/nri21.png");
     background-repeat: no-repeat;
     line-height: 1.429;
@@ -138,6 +148,7 @@ a:hover{text-decoration: underline;}
     width: 100%;
     height: 270px;
     margin: 20px 0px;
+    object-fit: cover;
 }
 .articleDetailBody img{
     width: 100%;
@@ -224,7 +235,7 @@ a:hover{text-decoration: underline;}
     font-size: 20px;
     margin: 30px;
     padding-top: 5px;
-    padding-left: 530px;
+    padding-left: 600px;
 }
 .snsFollow img{
     margin: 30px 20px;
@@ -337,19 +348,14 @@ figure {
     vertical-align: bottom;
     width: 100%;
 }
-.pageBody .mainVisualText h3 {
+.pageBody .mainVisualText p{
     font-size: 20px;
     line-height: 1.231;
     margin: 20pxs;
     padding-left: 220px;
     font-weight: normal;
 }
-.pageBody .mainVisualText h2 {
-    font-size: 24px;
-    line-height: 1.5;
-    margin: 0;
-    padding-left: 220px;
-}
+
 /* NRIの強み */
 .StrongPoint {
     background-color: #deecf8;
@@ -358,7 +364,7 @@ figure {
     padding-bottom: 30px;
     margin-bottom: 50px;
 }
-.StrongPoint h2 {
+.StrongPoint h3{
     font-size: 16px;
     box-sizing: border-box;
     width: 100%;
